@@ -8,8 +8,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 
 from database import engine, Base, get_db
-from .models import DeficiencyLog
-from .schemas import (
+from models import DeficiencyLog
+from schemas import (
     DeficiencyNotifyRequest, 
     DeficiencyResolveRequest,
     StandardResponse,
