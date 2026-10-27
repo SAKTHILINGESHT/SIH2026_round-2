@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+**/node_modules/
+package-lock.json.bak
+
+# Production & Build Artifacts
+dist/
+**/dist/
+build/
+**/build/
+.vite/
+**/.vite/
+
+# Python virtual envs & compiled bytecode
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+.pytest_cache/
+
+# Databases & local state
+*.sqlite3
+*.db
+**/deficiencies.db
+database.db
+
+# Logs & temp files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tmp
+
+# Environment variables & local secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Operating System & Editor metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

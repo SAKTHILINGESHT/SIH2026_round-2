@@ -1,0 +1,60 @@
+{
+  "handbookVersion": "AICTE Approval Process Handbook (APH) 2026-27",
+  "bureau": "Regulation Bureau, New Delhi",
+  "rules": [
+    {
+      "ruleId": "APH-RULE-201",
+      "category": "Document Validity",
+      "title": "NOC & Statutory Certificate Validity Horizon",
+      "description": "State Government NOC and Affiliating University NOC must be valid for the current academic year 2026-27. Unexpired status must be corroborated with the state gazette or issuing registry.",
+      "requiredFor": ["Extension of Approval", "New Courses", "Intake Variation"],
+      "severity": "CRITICAL",
+      "actionOnFailure": "FLAG_DEFICIENCY"
+    },
+    {
+      "ruleId": "APH-RULE-304",
+      "category": "Infrastructure - Computing",
+      "title": "Central Computer Center Norms (Chapter VII, Table 7.1)",
+      "description": "Institutions with sanctioned intake ≥ 240 must maintain a minimum of 60 operational PCs with Core i5/equivalent, licensed software, and structured networking in designated lab. Photographic evidence subjected to Cross-Modal Computer Vision verification.",
+      "minimumRequirement": {
+        "computersPerStudentRatio": 0.25,
+        "minAbsoluteComputers": 60,
+        "lanBandwidthMbps": 1000
+      },
+      "severity": "HIGH",
+      "actionOnFailure": "EVC_SURPRISE_INSPECTION"
+    },
+    {
+      "ruleId": "APH-RULE-412",
+      "category": "Land & Title",
+      "title": "Land Ownership & Registered Lease Period",
+      "description": "The institution premises must be on owned land or registered lease deed for a minimum unbroken period of 30 years (with at least 20 years unexpired at time of scrutiny).",
+      "minimumLeaseYears": 30,
+      "minUnexpiredYears": 20,
+      "severity": "CRITICAL",
+      "actionOnFailure": "REJECT_WITH_HEARING"
+    },
+    {
+      "ruleId": "APH-RULE-508",
+      "category": "Safety & Fire Compliance",
+      "title": "Fire & Life Safety Certificate (FSC)",
+      "description": "Mandatory valid Building & Fire Safety Certificate issued by State Fire Services or Municipal Authority. Stamp and certificate numbers must match the issuing department's online repository.",
+      "validityRequired": true,
+      "severity": "CRITICAL",
+      "actionOnFailure": "HALT_APPROVAL"
+    },
+    {
+      "ruleId": "APH-RULE-619",
+      "category": "Affidavit & Integrity",
+      "title": "Anti-Ragging & Capitation Fee Undertaking (Clause 4.2)",
+      "description": "Every EoA application requires a registered affidavit on non-judicial stamp paper (Rs. 100/-) containing statutory clauses: Anti-Ragging, zero capitation fee, and authentic faculty roster.",
+      "mandatoryClauses": [
+        "Clause 4.2.1: Prevention and Prohibition of Ragging",
+        "Clause 4.2.4: Strict Adherence to Prescribed Tuition Fee Structure",
+        "Clause 4.2.8: Unconditional Consent for Surprise AICTE EVC Audit"
+      ],
+      "severity": "HIGH",
+      "actionOnFailure": "FLAG_DEFICIENCY"
+    }
+  ]
+}
