@@ -1,6 +1,6 @@
 from datetime import datetime
 from sqlalchemy import Column, Integer, String, Text, DateTime
-from .database import Base
+from database import Base
 
 class DeficiencyLog(Base):
     """
