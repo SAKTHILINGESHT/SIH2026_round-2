@@ -26,7 +26,7 @@ export function App() {
   // Fetch applications from server with live sync
   const fetchApplications = async () => {
     try {
-      const res = await fetch('/api/applications');
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/applications`);
       const data = await res.json();
       if (data && data.success && Array.isArray(data.data)) {
         setApplications(data.data);
